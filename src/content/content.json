@@ -1,0 +1,278 @@
+{
+  "person": {
+    "name": "Ali Abu-Hatem",
+    "headline": "Senior Full-Stack Engineer & Technical Lead",
+    "short_title": "Senior Full-Stack Engineer",
+    "location": "New Cairo, Egypt",
+    "timezone": "UTC+2",
+    "email": "aliabuhatem966@gmail.com",
+    "phone": "+20 101 591 5194",
+    "phone_href": "+201015915194",
+    "github": "github.com/aliabuhatem",
+    "github_url": "https://github.com/aliabuhatem",
+    "linkedin": "linkedin.com/in/ali-abuhatem",
+    "linkedin_url": "https://www.linkedin.com/in/ali-abuhatem",
+    "availability": "Open to senior full-stack roles, remote or with relocation",
+    "thesis": "Full-stack, all the way down.",
+    "intro": "I'm Ali Abu-Hatem. I design, build and run production systems end to end: Django and Next.js platforms, Flutter apps, local AI tools, and the servers and networks they live on.",
+    "summary": "Senior full-stack engineer and technical lead with 7+ years across software delivery and network infrastructure. Technical owner of HS Group's software estate across three companies, where I architect and ship Python/Django and PostgreSQL platforms, a Next.js + Django REST Framework headless CMS, a local-LLM workflow tool, and run the group's ERP and servers. Through my practice, AWAM SOFT, I have delivered production Flutter and Firebase apps end to end for clients in Yemen, the Netherlands and Egypt. I own systems from data model to deployment, design for real constraints (offline use, concurrency, Arabic RTL, data privacy), and lead a small team through code review and clean architecture.",
+    "about_long": [
+      "I started in networks, keeping infrastructure online for 100+ concurrent users. That habit stayed with me: I build software with the server, the network and the person on call in mind.",
+      "Today I am the technical owner of HS Group's software estate across three companies. I decide the architecture, write a large share of the code, review the rest, and keep it running. In parallel, my practice AWAM SOFT ships mobile and web products for international clients, solo, from requirements to release."
+    ]
+  },
+
+  "stats": [
+    {"value": "7", "label": "systems shipped or in build", "source": "portfolio below"},
+    {"value": "4", "label": "companies, holding and independent", "source": "HS International, INFRA, HS Investment, AWAM SOFT"},
+    {"value": "975", "label": "commits on the INFRA public repo", "source": "public repository"},
+    {"value": "99.5%", "label": "IT uptime for 50+ users", "source": "HS Group IT operations"}
+  ],
+
+  "keywords": [
+    "Full-Stack Development", "Python", "Django", "Django REST Framework", "REST API design", "PostgreSQL",
+    "TypeScript", "JavaScript", "React", "Next.js", "Tailwind CSS", "Framer Motion", "Flutter", "Dart",
+    "BLoC", "Riverpod", "Firebase", "Cloud Firestore", "Firebase Cloud Messaging", "Hive", "Headless CMS",
+    "Role-based access control (RBAC)", "System architecture", "Clean Architecture", "Code review",
+    "Technical leadership", "LLM integration", "Ollama", "Google Gemini", "Offline support", "Concurrency control",
+    "Internationalization (i18n)", "Arabic RTL", "Accessibility", "Performance optimization", "Git", "GitHub",
+    "Vercel", "Windows Server", "Active Directory", "Network security", "ERP administration", "Cloud migration"
+  ],
+
+  "skills": [
+    {"group": "Backend", "items": ["Python", "Django", "Django REST Framework", "REST API design", "PostgreSQL", "RBAC", "Django Unfold admin"]},
+    {"group": "Frontend", "items": ["TypeScript", "JavaScript", "React", "Next.js", "Tailwind CSS", "Framer Motion", "HTML/CSS", "Accessibility"]},
+    {"group": "Mobile", "items": ["Flutter", "Dart", "BLoC", "Riverpod", "Firebase (Firestore, FCM)", "Hive offline cache"]},
+    {"group": "AI", "items": ["LLM integration", "Ollama (local inference)", "Google Gemini"]},
+    {"group": "Infrastructure", "items": ["Vercel", "Git & GitHub", "Windows Server", "Active Directory", "Networking & network security", "ERP administration", "Cloud migration"]},
+    {"group": "Practice", "items": ["System architecture", "Clean Architecture", "Code review", "Technical leadership", "i18n & Arabic RTL", "Requirements to deployment"]}
+  ],
+
+  "experience": [
+    {
+      "id": "hs",
+      "org": "HS Group",
+      "org_note": "Holding: HS International, INFRA Construction, HS Investment",
+      "role": "Technical Lead & Full-Stack Developer",
+      "dates": "Apr 2024 – Present",
+      "start": "2024",
+      "place": "New Cairo, Egypt",
+      "bullets": [
+        "Technical owner of the group's software estate across three companies: architecture, delivery and operations. Direct a small development team through code review and clean-architecture standards.",
+        "Architected and built a Tender Management System (Python, Django, PostgreSQL) that replaced spreadsheet-and-email tracking for four departments, with role-based access, an automated overdue-deadline engine and per-department dashboards.",
+        "Built a local-first AI Meeting Minutes & Task System (Django, Ollama, Gemini fallback) that turns raw minutes into assigned, trackable tasks; in daily use across two offices, with sensitive discussions kept on the company network.",
+        "Delivered INFRA Construction's 12-route corporate site on a custom Next.js/TypeScript CMS: 1,137 editable fields, 189 content sections and a 194-image library that non-technical staff update without code (975 commits, live on Vercel).",
+        "Building HS Investment's platform: a Next.js 16 front end on a Django 5.2 + Django REST Framework API, with an admin console that queues unanswered enquiries and partnerships and opportunities awaiting approval, and keeps every sector and sub-sector editable.",
+        "Technical owner of the group ERP and the company server; IT support for offices in Egypt, Jordan and the UAE, keeping services at 99.5% uptime for 50+ users. Leading the move of regional office data to the cloud."
+      ]
+    },
+    {
+      "id": "awam",
+      "org": "AWAM SOFT",
+      "org_note": "Independent software practice",
+      "role": "Founder & Full-Stack Developer",
+      "dates": "2023 – Present",
+      "start": "2023",
+      "place": "Remote",
+      "bullets": [
+        "Deliver production mobile and web systems end to end (requirements, architecture, build, release) for clients in Yemen, the Netherlands and Egypt.",
+        "Go Green Power (Yemen): Flutter/Riverpod customer app plus a 14-module operations back office (billing, contracts, tariffs, field surveys) on Firestore, with FCM push and offline-friendly Hive caching; replaced paper billing and complaint handling and is used daily by subscribers and field staff.",
+        "Real-Time Auction Platform (Netherlands): Flutter/BLoC marketplace across four categories; concurrent bids settled with atomic Firestore transactions so two buyers can never win the same lot; Dutch, English and Arabic (RTL); full operations admin; in final testing.",
+        "ConsultX (Egypt): bilingual English/Arabic RTL marketing site and CMS on Django and Tailwind CSS, a stack chosen for the client's long-term maintenance."
+      ]
+    },
+    {
+      "id": "prima",
+      "org": "Prima Investment Ltd",
+      "org_note": "",
+      "role": "Senior Network Engineer",
+      "dates": "2021 – 2023",
+      "start": "2021",
+      "place": "Yemen",
+      "bullets": [
+        "Owned network reliability and security for infrastructure serving 100+ concurrent users; cut network vulnerabilities by 30% and downtime by 20%."
+      ]
+    }
+  ],
+
+  "education": {
+    "degree": "B.Tech, Computer Network Engineering",
+    "school": "Sana'a Community College",
+    "dates": "2016 – 2020",
+    "note": "GPA 3.7 / 4.0"
+  },
+
+  "languages": [
+    {"name": "Arabic", "level": "Native"},
+    {"name": "English", "level": "Professional"}
+  ],
+
+  "principles": [
+    {"key": "own()", "title": "Own the whole system", "body": "Data model, API, interface, release and the server it runs on. Fewer hand-offs means fewer surprises in production.", "proof": "Tender Management, INFRA, HS Investment"},
+    {"key": "constrain()", "title": "Treat constraints as requirements", "body": "Flaky networks, simultaneous bids, Arabic RTL and private data shape the architecture from day one, not in the last sprint.", "proof": "Go Green Power, Auction Platform, AI Meeting Minutes"},
+    {"key": "handover()", "title": "Editors are users too", "body": "If the people running the business cannot update it without me, it is not finished.", "proof": "1,137 editable fields on INFRA; HS Investment admin"},
+    {"key": "truth()", "title": "Honest software", "body": "An honest empty state beats invented case studies, and every number here comes from a live system, a repository or a written record.", "proof": "ConsultX, this portfolio"}
+  ],
+
+  "projects": [
+    {
+      "id": "hs-investment",
+      "name": "HS Investment Platform",
+      "client": "HS Investment",
+      "company": "HS Group",
+      "country": "UAE · China · Turkey · Egypt · Yemen",
+      "kind": "Web platform + admin console",
+      "status": "In build",
+      "status_key": "build",
+      "featured": true,
+      "role": "Architect and lead developer",
+      "oneliner": "A cinematic public site and the admin console that runs it, for an investment group active in five countries.",
+      "stack": ["Next.js 16", "React", "TypeScript", "Framer Motion", "Django 5.2", "Django REST Framework", "Django Unfold"],
+      "business_challenge": "An investment arm active in the UAE, China, Turkey, Egypt and Yemen needed a public presence that matches the scale of its capital operations, and a way for its own team to keep sectors, partnerships and opportunities current and to answer every investor enquiry.",
+      "technical_challenge": "Deliver a full-screen video hero and rich motion without hurting performance or accessibility, backed by a content model for sectors, sub-sectors, partnerships, opportunities, projects and news, with an approval step that non-technical staff can run.",
+      "business_solution": "A scroll-driven site with a full-screen video hero, plus an admin console that opens on what needs attention: unanswered enquiries, partnerships and opportunities waiting for approval, and sectors with unconfirmed status.",
+      "technical_solution": "Headless architecture: Django 5.2 models behind a read-only Django REST Framework API, consumed by a Next.js 16 front end with Framer Motion and a static fallback for prefers-reduced-motion. The Unfold-based admin adds one-click creation for every content type, image upload from the editor's computer, an enquiry inbox and a recent-actions log.",
+      "facts": ["7 content types", "Approval queue", "Enquiry inbox", "Reduced-motion fallback"],
+      "images": [
+        {"src": "hsi-site", "alt": "HS Investment public site hero: city skyline at golden hour with the headline Connecting capital, capability and opportunity", "label": "Public site"},
+        {"src": "hsi-admin", "alt": "HS Investment admin console dashboard with a needs-attention queue, content counters and latest enquiries", "label": "Admin console"}
+      ]
+    },
+    {
+      "id": "tender",
+      "name": "Tender Management System",
+      "client": "HS International",
+      "company": "HS Group",
+      "country": "Internal",
+      "kind": "Internal web system",
+      "status": "Active use",
+      "status_key": "active",
+      "role": "Sole architect and developer",
+      "oneliner": "One source of truth for tenders across Sales, Technical, Finance and Customer teams.",
+      "stack": ["Python", "Django", "PostgreSQL"],
+      "business_challenge": "Four departments tracked tenders by hand across spreadsheets and email, with no single source of truth and missed deadlines.",
+      "technical_challenge": "Model a multi-department approval workflow with role-based access and automatic deadline tracking, built and owned by one engineer.",
+      "business_solution": "Every department sees tender status, deadlines and ownership in real time, and the manual approval chain is gone.",
+      "technical_solution": "A Python/Django platform designed from the ground up, with an automated overdue-tracking engine and role-based dashboards per department on PostgreSQL.",
+      "facts": ["4 departments", "Role-based access", "Automatic overdue alerts"],
+      "images": [{"src": "tender", "alt": "Tender management dashboard listing tenders with status, priority, deadline and overdue flags", "label": "Dashboard"}]
+    },
+    {
+      "id": "infra",
+      "name": "INFRA Construction",
+      "client": "INFRA Construction",
+      "company": "HS Group",
+      "country": "Middle East & Africa",
+      "kind": "Corporate site + custom CMS",
+      "status": "Live",
+      "status_key": "live",
+      "role": "Architect and developer",
+      "url": "https://infra-construction.vercel.app",
+      "url_label": "infra-construction.vercel.app",
+      "oneliner": "A 12-route corporate site with a CMS that non-technical staff run themselves.",
+      "stack": ["Next.js", "TypeScript", "Tailwind CSS"],
+      "business_challenge": "A contracting company working across six sectors and several countries needed a professional public presence that its own non-technical staff could keep up to date.",
+      "technical_challenge": "Build a CMS flexible enough for 1,137 editable fields and a 194-image library without making it unusable for non-technical editors.",
+      "business_solution": "The business has full self-service control over 189 content sections across 12 routes, without touching code.",
+      "technical_solution": "A custom Next.js/TypeScript CMS admin layer built from scratch, live in production with 975 commits in the public repository.",
+      "facts": ["12 routes", "1,137 editable fields", "194 images", "975 commits"],
+      "images": [{"src": "infra", "alt": "INFRA Construction homepage hero with a highway interchange and the headline We do not only aim to meet your expectation", "label": "Homepage"}]
+    },
+    {
+      "id": "minutes",
+      "name": "AI Meeting Minutes & Tasks",
+      "client": "HS International",
+      "company": "HS Group",
+      "country": "Internal",
+      "kind": "Local-first AI tool",
+      "status": "Active use",
+      "status_key": "active",
+      "role": "Sole developer",
+      "oneliner": "Raw meeting minutes become assigned, tracked tasks, without data leaving the building.",
+      "stack": ["Django", "Ollama", "Gemini"],
+      "business_challenge": "Meeting outcomes lived in ad hoc notes that rarely became tracked action items, and sensitive discussions could not leave the company network.",
+      "technical_challenge": "Run AI summarization locally with no cloud dependency, while keeping accuracy high enough to extract real tasks.",
+      "business_solution": "An internal tool that turns minutes into assigned, trackable tasks, in daily use across two offices.",
+      "technical_solution": "A local-first AI layer on Ollama, with Gemini as a fallback, integrated with Django to parse minutes and create tracked tasks automatically.",
+      "facts": ["Local inference", "2 offices", "Daily use"],
+      "images": [{"src": "minutes", "alt": "Meeting minutes dashboard with meetings, total, completed and overdue task counters and a task status chart", "label": "Dashboard"}]
+    },
+    {
+      "id": "ggp",
+      "name": "Go Green Power",
+      "client": "Go Green Power",
+      "company": "AWAM SOFT",
+      "country": "Yemen",
+      "kind": "Mobile app + back office",
+      "status": "Live",
+      "status_key": "live",
+      "role": "Solo build, requirements to release",
+      "oneliner": "A customer app and a 14-module back office for an electricity subscription provider.",
+      "stack": ["Flutter", "Riverpod", "Firebase", "Hive"],
+      "business_challenge": "An electricity subscription provider needed to move customers and staff off paper-based billing and complaint handling.",
+      "technical_challenge": "Keep the app usable on unreliable connections while still syncing billing data in real time once back online.",
+      "business_solution": "A customer app plus a 14-module operations back office covering billing, contracts, tariffs and field surveys, used daily by subscribers and field staff.",
+      "technical_solution": "Flutter with Riverpod on Cloud Firestore real-time data, FCM push notifications and offline-friendly Hive caching; Arabic RTL throughout.",
+      "facts": ["14 modules", "Offline-friendly", "Arabic RTL", "Daily use"],
+      "images": [
+        {"src": "ggp-phone", "alt": "Go Green Power customer app home screen in Arabic with balance, consumption and quick actions", "label": "Customer app", "phone": true},
+        {"src": "ggp-web", "alt": "Go Green Power operations back office in Arabic with a right-hand navigation of modules", "label": "Back office"}
+      ]
+    },
+    {
+      "id": "auction",
+      "name": "Real-Time Auction Platform",
+      "client": "Netherlands-based auction business",
+      "company": "AWAM SOFT",
+      "country": "Netherlands",
+      "kind": "Mobile marketplace + admin",
+      "status": "Final testing",
+      "status_key": "testing",
+      "role": "Solo build",
+      "oneliner": "Live bidding across four categories where two buyers can never win the same lot.",
+      "stack": ["Flutter", "BLoC", "Firebase"],
+      "business_challenge": "An auction business needed live bidding across four categories without the risk of two buyers winning the same lot.",
+      "technical_challenge": "Guarantee no race conditions when several users bid on the same item at the same moment.",
+      "business_solution": "A functionally complete bidding marketplace with a full operations admin suite, now in final testing before launch.",
+      "technical_solution": "Flutter with BLoC; concurrent bids settled through atomic Firestore transactions; Dutch, English and Arabic (RTL) localization.",
+      "facts": ["Atomic bids", "4 categories", "NL · EN · AR"],
+      "images": [
+        {"src": "auction-phone", "alt": "Auction app listing live auctions with current bids and countdowns", "label": "Buyer app", "phone": true},
+        {"src": "auction-web", "alt": "Auction operations admin dashboard in Dutch with live auctions, bidders and a seven-day bids chart", "label": "Operations admin"}
+      ]
+    },
+    {
+      "id": "consultx",
+      "name": "ConsultX",
+      "client": "ConsultX",
+      "company": "AWAM SOFT",
+      "country": "Egypt",
+      "kind": "Bilingual site + CMS",
+      "status": "In build",
+      "status_key": "build",
+      "role": "Architect and developer",
+      "oneliner": "A credible bilingual presence for a newly founded engineering consultancy.",
+      "stack": ["Django", "Tailwind CSS"],
+      "business_challenge": "A newly founded engineering consultancy had no completed projects yet but needed a credible bilingual public presence.",
+      "technical_challenge": "Choose a stack the client can maintain long-term, and support a full Arabic RTL layout cleanly.",
+      "business_solution": "A bilingual English/Arabic site and CMS with an honest empty state instead of invented case studies.",
+      "technical_solution": "Django and Tailwind CSS, chosen over Next.js after weighing the trade-offs against the client's long-term maintenance needs.",
+      "facts": ["EN / AR RTL", "CMS", "Honest empty state"],
+      "images": [{"src": "consultx", "alt": "ConsultX homepage hero with an aerial view of an industrial site", "label": "Homepage"}]
+    }
+  ],
+
+  "git_log": [
+    {"hash": "a3f9e21", "branch": "main", "ref": "HEAD -> main", "type": "feat", "scope": "hs-investment", "msg": "headless platform: Next.js 16 + Django REST + admin approvals", "tag": "in build"},
+    {"hash": "7c41d0b", "branch": "main", "type": "feat", "scope": "ai", "msg": "local-first minutes to tasks (Ollama, Gemini fallback)", "tag": "active use"},
+    {"hash": "e8b27aa", "branch": "main", "type": "feat", "scope": "infra", "msg": "12-route site + custom CMS, 975 commits", "tag": "live"},
+    {"hash": "41d6f0c", "branch": "main", "type": "feat", "scope": "tender", "msg": "multi-department tender workflow on Django + PostgreSQL", "tag": "active use"},
+    {"hash": "5be8c13", "branch": "awam", "ref": "awam-soft", "type": "feat", "scope": "auction", "msg": "atomic bids, NL/EN/AR", "tag": "final testing"},
+    {"hash": "c90e9f2", "branch": "awam", "type": "feat", "scope": "go-green-power", "msg": "14-module back office + offline-friendly app", "tag": "live"},
+    {"hash": "2fa4b8d", "branch": "main", "type": "join", "scope": "hs-group", "msg": "Technical Lead, owner of the group's software estate", "date": "Apr 2024"},
+    {"hash": "0c2b1d5", "branch": "awam", "type": "init", "scope": "awam-soft", "msg": "independent practice opens: production Flutter and web apps, solo", "date": "2023", "fork": true},
+    {"hash": "6a1e4f9", "branch": "main", "type": "role", "scope": "prima", "msg": "Senior Network Engineer: vulnerabilities -30%, downtime -20%", "date": "2021"},
+    {"hash": "9d7c3b2", "branch": "main", "type": "build", "scope": "education", "msg": "B.Tech Computer Network Engineering, GPA 3.7", "date": "2020"},
+    {"hash": "0000001", "branch": "main", "type": "init", "scope": "", "msg": "hello, world", "date": "2016"}
+  ]
+}
