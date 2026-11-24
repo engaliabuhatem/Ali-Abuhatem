@@ -4,7 +4,9 @@
 <meta name="keywords" content="{{ keywords }}">
 <meta name="author" content="{{ p.name }}">
 <meta name="theme-color" content="#11161e">
-<meta property="og:type" content="profile">
+{% if canonical %}<link rel="canonical" href="{{ canonical }}">
+<meta property="og:url" content="{{ canonical }}">
+{% endif %}<meta property="og:type" content="profile">
 <meta property="og:title" content="{{ p.name }}, {{ p.headline }}">
 <meta property="og:description" content="{{ p.intro }}">
 {% if og_image %}<meta property="og:image" content="{{ og_image }}">
@@ -170,12 +172,12 @@
     <div class="wrap">
       <div class="section-head">
         <p class="path code">~/ali/<b>work</b></p>
-        <h2 id="work-title" data-scramble>Seven systems, four companies, one technical owner</h2>
+        <h2 id="work-title" data-scramble>Eight systems, four companies, one technical owner</h2>
         <p class="lede">Production work across a holding group and my own practice. Client repositories stay private under NDA; I am happy to walk through any of them live.</p>
       </div>
 
-      {% set f = featured %}
-      <article class="featured" id="project-{{ f.id }}">
+      {% for f in featured %}
+      <article class="featured{% if not loop.first %} flip{% endif %}" id="project-{{ f.id }}">
         <div class="featured-copy">
           <div class="meta-row"><span class="status" data-status="{{ f.status_key }}">{{ f.status }}</span><span>{{ f.company }}</span><span>{{ f.kind }}</span></div>
           <h3>{{ f.name }}</h3>
@@ -188,11 +190,11 @@
         <div class="featured-media">
           <div class="screens" data-screens>
             <div class="screen browser front" data-screen="0">
-              <div class="bar"><i></i><i></i><i></i><span class="url">localhost:3000</span></div>
-              <img src="assets/{{ f.images[0].src }}.webp" width="1600" height="863" alt="{{ f.images[0].alt }}">
+              <div class="bar"><i></i><i></i><i></i><span class="url">{{ f.bars[0] }}</span></div>
+              <img src="assets/{{ f.images[0].src }}.webp" width="1600" height="863" alt="{{ f.images[0].alt }}"{% if not loop.first %} loading="lazy"{% endif %}>
             </div>
             <div class="screen browser back" data-screen="1">
-              <div class="bar"><i></i><i></i><i></i><span class="url">localhost:8000/admin</span></div>
+              <div class="bar"><i></i><i></i><i></i><span class="url">{{ f.bars[1] }}</span></div>
               <img src="assets/{{ f.images[1].src }}.webp" width="1600" height="862" alt="{{ f.images[1].alt }}" loading="lazy">
             </div>
           </div>
@@ -202,6 +204,7 @@
           </div>
         </div>
       </article>
+      {% endfor %}
 
       <div class="work-grid">
         {% for pr in others %}

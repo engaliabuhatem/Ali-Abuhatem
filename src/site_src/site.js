@@ -184,17 +184,19 @@
   onScroll();
 
   /* ---------------------------------------------------------------- featured screens */
-  const screens = $$("[data-screen]");
-  const showBtns = $$("[data-show]");
-  showBtns.forEach((b) => b.addEventListener("click", () => {
-    const idx = Number(b.dataset.show);
-    showBtns.forEach((x) => x.setAttribute("aria-selected", String(x === b)));
-    screens.forEach((s) => {
-      const front = Number(s.dataset.screen) === idx;
-      s.classList.toggle("front", front);
-      s.classList.toggle("back", !front);
-    });
-  }));
+  $$(".featured").forEach((art) => {
+    const screens = $$("[data-screen]", art);
+    const showBtns = $$("[data-show]", art);
+    showBtns.forEach((b) => b.addEventListener("click", () => {
+      const idx = Number(b.dataset.show);
+      showBtns.forEach((x) => x.setAttribute("aria-selected", String(x === b)));
+      screens.forEach((s) => {
+        const front = Number(s.dataset.screen) === idx;
+        s.classList.toggle("front", front);
+        s.classList.toggle("back", !front);
+      });
+    }));
+  });
 
   /* ---------------------------------------------------------------- case-study dialogs */
   function openCase(id) {
@@ -683,7 +685,7 @@
       ...[
         ["neofetch", "system summary of Ali"],
         ["whoami", "who you are talking to"],
-        ["projects", "the 7 systems, with status"],
+        ["projects", `the ${DATA.projects.length} systems, with status`],
         ["open <id>", "open a case study, e.g. open hs-investment"],
         ["skills", "the stack, grouped"],
         ["experience", "roles and dates"],
@@ -707,7 +709,7 @@
         ["Data", "PostgreSQL, Firestore, Hive"],
         ["AI", "Ollama (local), Gemini"],
         ["Infra", "Vercel, Windows Server, Active Directory"],
-        ["Packages", "7 systems shipped or in build"],
+        ["Packages", `${DATA.projects.length} systems shipped or in build`],
         ["Languages", "Arabic (native), English (professional)"],
         ["Status", P.availability],
       ].map((l) => (Array.isArray(l) ? `<span class="k">${esc(l[0])}</span>: ${esc(l[1])}` : l)).join("\n");
@@ -836,9 +838,12 @@
     });
 
     // featured screens drift in depth while scrolling past
-    gsap.fromTo("[data-screens]", { rotationY: -16, rotationX: 7 }, {
-      rotationY: -3, rotationX: 0, ease: "none",
-      scrollTrigger: { trigger: ".featured", start: "top bottom", end: "bottom 30%", scrub: 0.6 },
+    $$(".featured").forEach((art) => {
+      const dir = art.classList.contains("flip") ? 1 : -1;
+      gsap.fromTo($("[data-screens]", art), { rotationY: 16 * dir, rotationX: 7 }, {
+        rotationY: 3 * dir, rotationX: 0, ease: "none",
+        scrollTrigger: { trigger: art, start: "top bottom", end: "bottom 30%", scrub: 0.6 },
+      });
     });
 
     // project media rise in perspective (transform only; content stays visible)

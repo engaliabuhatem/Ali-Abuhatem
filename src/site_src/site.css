@@ -462,6 +462,13 @@ p { margin: 0; text-wrap: pretty; }
 .screens .screen { transition: transform 0.9s var(--ease), opacity 0.6s, filter 0.6s; transform-style: preserve-3d; }
 .screens .screen.front { position: relative; z-index: 2; transform: translateZ(60px); }
 .screens .screen.back { position: absolute; inset: 0; z-index: 1; transform: translate3d(9%, -11%, -80px); filter: saturate(0.85) brightness(0.92); }
+/* second featured project: mirrored, so the two rows read as a pair */
+@media (min-width: 901px) {
+  .featured.flip { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+  .featured.flip .featured-media { order: -1; }
+}
+.featured.flip .screens { transform: rotateY(10deg) rotateX(4deg); }
+.featured.flip .screens .screen.back { transform: translate3d(-9%, -11%, -80px); }
 .screen-switch { position: relative; z-index: 3; display: inline-flex; gap: 4px; padding: 4px; margin-top: 22px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg-raise); }
 .screen-switch button { border: 0; background: none; padding: 8px 14px; border-radius: 7px; font-size: 14px; color: var(--fg-2); cursor: pointer; }
 .screen-switch button[aria-selected="true"] { background: var(--fg); color: var(--bg); }

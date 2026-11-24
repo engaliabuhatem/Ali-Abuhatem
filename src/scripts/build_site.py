@@ -23,9 +23,11 @@ for _p in DATA["projects"]:
     _p.setdefault("url", None)
     _p.setdefault("url_label", None)
     _p.setdefault("featured", False)
+    _p.setdefault("spotlight", False)  # also gets a wide row on the site; print keeps one page each
+    _p.setdefault("bars", ["hs-investment / home", "hs-investment / admin"])
     for _im in _p["images"]:
         _im.setdefault("phone", False)
-BARS = {"tender": "tenderflow / dashboard", "infra": "infra-construction.vercel.app", "minutes": "meeting-minutes / dashboard",
+BARS = {"tender": "tenderflow / dashboard", "infra": "infra-construction / home", "minutes": "meeting-minutes / dashboard",
         "ggp": "go-green-power / back office", "auction": "auction-admin / dashboard", "consultx": "consultx / home",
         "hs-investment": "localhost:3000"}
 for _p in DATA["projects"]:
@@ -33,6 +35,8 @@ for _p in DATA["projects"]:
 for _c in DATA["git_log"]:
     for _k in ("ref", "date", "tag"):
         _c.setdefault(_k, None)
+
+SITE_URL = "https://engaliabuhatem.github.io/Ali-Abuhatem/"
 
 FILES = {
     "cv": "Ali-Abu-Hatem-CV.pdf",
@@ -57,7 +61,7 @@ for i, o in enumerate(ORBIT):
 LAYERS = [
     {"name": "Interface", "short": "ui", "c": "mint",
      "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Flutter"],
-     "where": "INFRA, HS Investment, Go Green Power, Auction"},
+     "where": "INFRA, HS Investment, 3 Pillars, Go Green Power, Auction"},
     {"name": "API and business logic", "short": "api", "c": "lilac",
      "tech": ["Python", "Django", "Django REST Framework", "REST design", "RBAC"],
      "where": "Tender Management, HS Investment, ConsultX"},
@@ -85,7 +89,7 @@ export const ali = {
     ai: ["Ollama", "Gemini"],
     infra: ["Vercel", "Windows Server", "Active Directory"],
   },
-  shipped: 7,
+  shipped: 8,
   languages: ["Arabic", "English"],
   openTo: ["remote", "relocation"],
 } as const;'''
@@ -132,6 +136,8 @@ def jsonld():
         "@context": "https://schema.org",
         "@type": "Person",
         "name": P["name"],
+        "url": SITE_URL,
+        "image": SITE_URL + "assets/og-card.jpg",
         "jobTitle": P["headline"],
         "email": "mailto:" + P["email"],
         "telephone": P["phone"],
@@ -162,12 +168,13 @@ def render(variant):
     env = Environment(loader=FileSystemLoader(SRC), autoescape=True, undefined=StrictUndefined,
                       trim_blocks=True, lstrip_blocks=True)
     tpl = env.get_template("index.html.j2")
-    featured = next(p for p in DATA["projects"] if p.get("featured"))
-    others = [p for p in DATA["projects"] if not p.get("featured")]
+    featured = [p for p in DATA["projects"] if p["featured"] or p["spotlight"]]
+    others = [p for p in DATA["projects"] if p not in featured]
     deploy = variant == "deploy"
     return tpl.render(
         page_title=(f"{P['name']} | Senior Full-Stack Engineer" if deploy else "Ali Abu-Hatem Portfolio"),
-        og_image=("assets/og-card.jpg" if deploy else ""),
+        og_image=(SITE_URL + "assets/og-card.jpg" if deploy else ""),
+        canonical=(SITE_URL if deploy else ""),
         p=P, d=DATA, stats=DATA["stats"], featured=featured, others=others,
         scenes=SCENES, orbit=ORBIT, layers=LAYERS, files=FILES,
         gitrows=git_rows(DATA["git_log"]),

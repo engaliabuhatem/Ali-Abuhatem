@@ -23,7 +23,7 @@
   },
 
   "stats": [
-    {"value": "7", "label": "systems shipped or in build", "source": "portfolio below"},
+    {"value": "8", "label": "systems shipped or in build", "source": "portfolio below"},
     {"value": "4", "label": "companies, holding and independent", "source": "HS International, INFRA, HS Investment, AWAM SOFT"},
     {"value": "975", "label": "commits on the INFRA public repo", "source": "public repository"},
     {"value": "99.5%", "label": "IT uptime for 50+ users", "source": "HS Group IT operations"}
@@ -139,6 +139,30 @@
       ]
     },
     {
+      "id": "3-pillars",
+      "name": "3 Pillars",
+      "client": "3 Pillars Project Management Services",
+      "company": "HS Group",
+      "country": "UAE",
+      "kind": "Web platform + admin console",
+      "status": "In build",
+      "status_key": "build",
+      "spotlight": true,
+      "bars": ["3-pillars / home", "3-pillars / admin"],
+      "role": "Technical Lead & Full-Stack Developer",
+      "oneliner": "A bilingual public site and the business-development console behind it, for a project management company.",
+      "stack": ["Next.js", "Django", "Django Unfold"],
+      "business_challenge": "A project management company needed a public presence built around its three-pillars identity, and one place for its team to handle proposal requests, enquiries and job applications.",
+      "technical_challenge": "Support English and Arabic across a wide set of content types, with an approval step before publishing and a clear view of anything past its follow-up date.",
+      "business_solution": "A site that opens on an animated three-pillars hero and leads to a proposal request, plus a console that opens on what needs attention: new proposals, unhandled enquiries and applications, and content waiting for approval.",
+      "technical_solution": "A Next.js front end in English and Arabic with a hero visitors can pause, and a Django admin on Unfold with a proposal pipeline from new to won, an approval queue for each content type, and checks for missing hero images and image descriptions.",
+      "facts": ["Proposal pipeline", "Approval queues", "English / Arabic", "Content-quality checks"],
+      "images": [
+        {"src": "3pillars-site", "alt": "3 Pillars homepage hero: the three-pillars mark on navy with the headline Every project, on three strong pillars", "label": "Public site"},
+        {"src": "3pillars-admin", "alt": "3 Pillars admin console dashboard with a needs-attention grid, a proposal pipeline and latest proposal requests", "label": "Admin console"}
+      ]
+    },
+    {
       "id": "tender",
       "name": "Tender Management System",
       "client": "HS International",
@@ -167,8 +191,6 @@
       "status": "Live",
       "status_key": "live",
       "role": "Architect and developer",
-      "url": "https://infra-construction.vercel.app",
-      "url_label": "infra-construction.vercel.app",
       "oneliner": "A 12-route corporate site with a CMS that non-technical staff run themselves.",
       "stack": ["Next.js", "TypeScript", "Tailwind CSS"],
       "business_challenge": "A contracting company working across six sectors and several countries needed a professional public presence that its own non-technical staff could keep up to date.",
@@ -263,7 +285,8 @@
   ],
 
   "git_log": [
-    {"hash": "a3f9e21", "branch": "main", "ref": "HEAD -> main", "type": "feat", "scope": "hs-investment", "msg": "headless platform: Next.js 16 + Django REST + admin approvals", "tag": "in build"},
+    {"hash": "d8e4c17", "branch": "main", "ref": "HEAD -> main", "type": "feat", "scope": "3-pillars", "msg": "bilingual site + proposal pipeline and approvals", "tag": "in build"},
+    {"hash": "a3f9e21", "branch": "main", "type": "feat", "scope": "hs-investment", "msg": "headless platform: Next.js 16 + Django REST + admin approvals", "tag": "in build"},
     {"hash": "7c41d0b", "branch": "main", "type": "feat", "scope": "ai", "msg": "local-first minutes to tasks (Ollama, Gemini fallback)", "tag": "active use"},
     {"hash": "e8b27aa", "branch": "main", "type": "feat", "scope": "infra", "msg": "12-route site + custom CMS, 975 commits", "tag": "live"},
     {"hash": "41d6f0c", "branch": "main", "type": "feat", "scope": "tender", "msg": "multi-department tender workflow on Django + PostgreSQL", "tag": "active use"},
