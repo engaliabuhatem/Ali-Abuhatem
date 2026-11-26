@@ -80,7 +80,7 @@ ABOUT_TS = '''// about.ts
 export const ali = {
   role: "Senior Full-Stack Engineer & Technical Lead",
   based: "New Cairo, Egypt",
-  experience: "7+ years",
+  experience: "5+ years",
   owns: ["architecture", "backend", "frontend", "mobile", "infra"],
   stack: {
     backend: ["Python", "Django", "DRF", "PostgreSQL"],
