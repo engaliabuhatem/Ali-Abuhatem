@@ -8,14 +8,14 @@
     "email": "aliabuhatem966@gmail.com",
     "phone": "+20 101 591 5194",
     "phone_href": "+201015915194",
-    "github": "github.com/aliabuhatem",
+    "github": "github.com/engaliabuhatem",
     "github_url": "https://github.com/aliabuhatem",
     "linkedin": "linkedin.com/in/ali-abuhatem",
     "linkedin_url": "https://www.linkedin.com/in/ali-abuhatem",
     "availability": "Open to senior full-stack roles, remote or with relocation",
     "thesis": "Full-stack, all the way down.",
     "intro": "I'm Ali Abu-Hatem. I design, build and run production systems end to end: Django and Next.js platforms, Flutter apps, local AI tools, and the servers and networks they live on.",
-    "summary": "Senior full-stack engineer and technical lead with 7+ years across software delivery and network infrastructure. Technical owner of HS Group's software estate across three companies, where I architect and ship Python/Django and PostgreSQL platforms, a Next.js + Django REST Framework headless CMS, a local-LLM workflow tool, and run the group's ERP and servers. Through my practice, AWAM SOFT, I have delivered production Flutter and Firebase apps end to end for clients in Yemen, the Netherlands and Egypt. I own systems from data model to deployment, design for real constraints (offline use, concurrency, Arabic RTL, data privacy), and lead a small team through code review and clean architecture.",
+    "summary": "Senior full-stack engineer and technical lead with 5+ years across software delivery and network infrastructure. Technical owner of HS Group's software estate across three companies, where I architect and ship Python/Django and PostgreSQL platforms, a Next.js + Django REST Framework headless CMS, a local-LLM workflow tool, and run the group's ERP and servers. Through my practice, AWAM SOFT, I have delivered production Flutter and Firebase apps end to end for clients in Yemen, the Netherlands and Egypt. I own systems from data model to deployment, design for real constraints (offline use, concurrency, Arabic RTL, data privacy), and lead a small team through code review and clean architecture.",
     "about_long": [
       "I started in networks, keeping infrastructure online for 100+ concurrent users. That habit stayed with me: I build software with the server, the network and the person on call in mind.",
       "Today I am the technical owner of HS Group's software estate across three companies. I decide the architecture, write a large share of the code, review the rest, and keep it running. In parallel, my practice AWAM SOFT ships mobile and web products for international clients, solo, from requirements to release."
